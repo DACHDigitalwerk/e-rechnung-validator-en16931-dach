@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "en16931-validator-dach"
+version = "1.0.0"
+authors = [
+  { name="DACH Digitalwerk", email="dach.digitalwerk@gmail.com" },
+]
+description = "Präziser EN 16931 E-Rechnung Validator für XRechnung 3.0 (UBL) & ZUGFeRD 2.2 / Factur-X (CII) nach deutschem Steuerrecht (§ 14 UStG 2026)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["e-rechnung", "en16931", "xrechnung", "zugferd", "factur-x", "ubl", "cii", "leitweg-id", "kosit", "fintech"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Accounting",
+]
+
+[project.urls]
+"Homepage" = "https://dach-digitalwerk.netlify.app/e-rechnung-validator/"
+"Web Validator" = "https://dach-digitalwerk.netlify.app/e-rechnung-validator/"
+"Repository" = "https://github.com/DACHDigitalwerk/e-rechnung-validator-en16931-dach"
+"B2B Suite" = "https://dachdigital.gumroad.com/l/gthgwc"
+
+[project.scripts]
+en16931-val = "en16931_validator.cli:main"
